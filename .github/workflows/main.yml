@@ -30,8 +30,8 @@ jobs:
         # Build Repo dan push ke github
       - name: 'Build and push'
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/driver .
-          docker push ${{ secrets.DOCKERHUB_USERNAME}}/driver
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/seller .
+          docker push ${{ secrets.DOCKERHUB_USERNAME}}/seller
       
       - name: 'Write Config & Key Files'
         run: |
